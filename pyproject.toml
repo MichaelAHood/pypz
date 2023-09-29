@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pypz"
+version = "0.1.0"
+description = "Nifi like processing of streaming data using standard AWS components."
+authors = ["Michael Hood <7614815+MichaelAHood@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.28.57"
+localstack-client = "^2.3"
+ipython = "^8.16.0"
+flask = "^2.3.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.291"
+black = "^23.9.1"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
